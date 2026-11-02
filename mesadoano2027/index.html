@@ -599,7 +599,7 @@ var VAGAS_ESGOTADAS = false;
   var MSG_OBRIGADA = "Oi, Thagata! Acabei de comprar a Mesa do Ano 2027 e vim confirmar a minha vaga.";
 
   function wa(msg) { return "https://wa.me/" + WHATSAPP.replace(/\D/g, "") + "?text=" + encodeURIComponent(msg); }
-  function externo(a) { a.target = "_blank"; a.rel = "noopener"; }
+  function externo(a) { /* sem target=_blank: quebra em navegador de Instagram/WhatsApp */ }
   function cada(sel, fn) { Array.prototype.forEach.call(document.querySelectorAll(sel), fn); }
 
   cada('[data-acao="comprar"]', function (a) {
