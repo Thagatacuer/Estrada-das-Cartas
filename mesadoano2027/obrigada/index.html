@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0e1d2a">
+<title>Vaga garantida · Mesa do Ano 2027</title>
+<style>
+  *{box-sizing:border-box;margin:0}
+  html,body{height:100%}
+  body{background:#0e1d2a;color:#f3ede3;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:flex;align-items:center;justify-content:center;padding:28px;text-align:center}
+  .caixa{max-width:420px}
+  .estrela{color:#c09149;font-size:22px;letter-spacing:8px}
+  h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:34px;line-height:1.15;margin:18px 0 14px}
+  p{font-size:16.5px;line-height:1.55;color:#d9d1c4}
+  .btn{display:inline-block;margin-top:28px;background:#c09149;color:#14202b;text-decoration:none;font-weight:600;font-size:17px;padding:16px 30px;border-radius:999px}
+  .miuda{font-size:13.5px;margin-top:20px;color:#a99f90}
+</style>
+</head>
+<body>
+  <div class="caixa">
+    <div class="estrela" aria-hidden="true">✦ ✦ ✦</div>
+    <h1>Sua vaga está garantida 💙</h1>
+    <p>Falta só me chamar no WhatsApp. Já estou abrindo pra você, com a mensagem pronta.</p>
+    <a class="btn" id="zap" href="#">Abrir o WhatsApp</a>
+    <p class="miuda">Se o WhatsApp não abrir sozinho, toca no botão.<br>As entregas vão de 24/11 a 12/12, por ordem de compra.</p>
+  </div>
+<script>
+  var LINK = "https://wa.me/5511917000153?text=" + encodeURIComponent("Oi, Thá! Acabei de garantir a minha Mesa do Ano. Quais dados você precisa?");
+  document.getElementById("zap").href = LINK;
+  setTimeout(function () { window.location.href = LINK; }, 1200);
+</script>
+</body>
+</html>
